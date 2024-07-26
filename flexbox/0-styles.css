@@ -1,4 +1,13 @@
-.row {
-  display: flex;
+/* Before */
+[class*='col-'] {
+    float: left;
+    width: 100%;
+    /* Other properties */
+}
+
+/* After */
+[class*='col-'] {
+    width: 100%;
+    /* Other properties */
 }
 
