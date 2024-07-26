@@ -1,4 +1,19 @@
+/* Section HERO */
 .hero-homepage {
-  /* All previous declarations from section-hero */
+    /* Move declarations from section-hero here */
+}
+
+.section-hero {
+    position: relative;
+    margin-top: -8.5rem;
+}
+
+.section-hero .section-body {
+    padding: 10rem 4rem;
+}
+
+.section-hero .section-category {
+    color: var(--color-white);
+    text-transform: uppercase;
 }
 

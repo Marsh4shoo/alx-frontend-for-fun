@@ -1,5 +1,15 @@
+/* Header */
 .header-container {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
+
+/* Remove these rules */
+.header-logo,
+.header-logo a,
+.navbar-menu {
+    /* Remove content */
+}
+
+/* Remove header-logo-position, header-logo-link-display, header-logo-link-position, header-logo-link-top, header-logo-link-left from variables */
 

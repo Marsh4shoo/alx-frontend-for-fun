@@ -1,4 +1,16 @@
-nav {
-  display: flex;
+/* Navbar */
+.nav {
+    display: flex;
 }
+
+.nav .nav-item {
+    /* display: block; */
+}
+
+.nav .nav-item + .nav-item {
+    margin: 0 0 0 2rem;
+}
+
+/* Variables section */
+--nav-item-margin: 0 0 0 2rem;
 
