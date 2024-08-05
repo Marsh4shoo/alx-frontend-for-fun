@@ -1,0 +1,5 @@
+.card-work a:focus {
+  outline: 3px solid #FFD700; /* Gold outline */
+  outline-offset: 4px;
+}
+
