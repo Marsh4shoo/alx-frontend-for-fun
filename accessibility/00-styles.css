@@ -1,11 +1,11 @@
-/* Add a border to the card when it receives focus */
-.card-work:focus-within {
-  outline: 2px solid #ff5722; /* You can change this color */
-  outline-offset: 2px;
+.card-work:focus {
+  outline: 3px solid #ff5733; /* A bright color to make the focus visible */
+  outline-offset: 5px; /* Adds space between the outline and the element */
 }
 
-/* Alternatively, you can use a box-shadow for a different style */
-.card-work:focus-within {
-  box-shadow: 0 0 0 3px rgba(255, 87, 34, 0.5); /* You can adjust the color and size */
+/* Ensure the card is focusable */
+.card-work {
+  display: block; /* Ensure the card is treated as a block-level element */
+  tab-index: 0; /* Make the card focusable with the keyboard */
 }
 
