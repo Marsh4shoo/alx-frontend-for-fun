@@ -8,4 +8,9 @@
   display: block; /* Ensure the card is treated as a block-level element */
   tab-index: 0; /* Make the card focusable with the keyboard */
 }
+.card-work a:focus {
+    outline: 2px solid #ffcc00; /* Highlight the link with a yellow border */
+    background-color: rgba(255, 204, 0, 0.2); /* Slightly change the background color */
+    box-shadow: 0 0 5px rgba(255, 204, 0, 0.5); /* Add a subtle shadow */
+}
 
