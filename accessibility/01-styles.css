@@ -1,0 +1,28 @@
+/* Helpers */
+.visually-hidden {
+  /* existing styles */
+}
+
+.off-screen {
+  left: -100vw;
+  position: absolute;
+}
+
+.skip-link {
+  background: var(--color-black); /* Assumes the variable is defined elsewhere */
+  color: var(--color-white);     /* Assumes the variable is defined elsewhere */
+  left: 0;
+  padding: .7rem;
+  position: fixed;
+  opacity: 0;
+  top: 0;
+  z-index: 10;
+  transform: translateY(-1rem);
+  transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+}
+
+.skip-link:focus {
+  opacity: 1;
+  transform: translateY(0);
+}
+

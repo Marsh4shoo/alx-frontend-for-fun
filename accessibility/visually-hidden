@@ -1,0 +1,5 @@
+.off-screen {
+  left: -100vw;
+  position: absolute;
+}
+
