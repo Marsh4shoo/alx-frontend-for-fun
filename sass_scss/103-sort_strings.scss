@@ -1,4 +1,31 @@
+// Define the list to sort
 $list_to_sort: john, anna, zoe, kim, felicia, carrie;
 
-@debug sort($list_to_sort);
+// Sorting function for a list of strings
+@function sort-list($list) {
+  @if length($list) <= 1 {
+    @return $list;
+  }
+
+  $pivot: nth($list, 1);
+  $rest: nth($list, 2, length($list));
+  $less: ();
+  $greater: ();
+
+  @each $item in $rest {
+    @if str-slice($item, 1) < str-slice($pivot, 1) {
+      $less: append($less, $item);
+    } @else {
+      $greater: append($greater, $item);
+    }
+  }
+
+  @return join(sort-list($less), $pivot, 'comma') + sort-list($greater);
+}
+
+// Call the sorting function
+$sorted_list: sort-list($list_to_sort);
+
+// Output the sorted list
+@debug $sorted_list;
 
