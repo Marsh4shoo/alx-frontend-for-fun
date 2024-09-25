@@ -1,7 +1,10 @@
-body
-	margin: 0;
-	padding: 0;
-	p
-		margin: 10px;
+// Define styles for the body and its child elements
+body {
+  margin: 0;
+  padding: 0;
 
-
+  // Nested declaration for p tags inside body
+  p {
+    margin: 10px;
+  }
+}
